@@ -42,7 +42,7 @@ plot(x, hrf(c(0.9),x), type="h", lwd=3, col="blue", ylab="h(x)",
 
 legend("topright","topright", legend=c(expression(paste(lambda,"=0.9"))),lwd=2,cex=1.2,lty=c(1), col=c("blue"),bty="n")
 
-###########R Code to esimat the parameters of DBH distribution##################
+###########R Code to esimate the parameters of DBH distribution##################
 loglmle=function(par,x){
 lambda=par[1]
 f=-sum(log(pdfn(par,x)))
